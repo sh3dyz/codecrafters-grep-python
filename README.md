@@ -1,4 +1,4 @@
-![progress-banner](https://codecrafters.io/landing/images/default_progress_banners/grep.png)
+![progress-banner](https://app.codecrafters.io/progress/grep/e2617a72-2d93-4c60-a610-dca93b211395)
 
 This is a starting point for Python solutions to the
 ["Build Your Own grep" Challenge](https://app.codecrafters.io/courses/grep/overview).
