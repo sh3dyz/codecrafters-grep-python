@@ -7,6 +7,12 @@ import sys
 def match_pattern(input_line, pattern):
     if len(pattern) == 1:
         return pattern in input_line
+    elif pattern == "\\d":
+        dd = ''
+        for i in input_line:
+            if i in "1234567890":
+                dd = dd+i
+        return dd.isdigit()
     else:
         raise RuntimeError(f"Unhandled pattern: {pattern}")
 
