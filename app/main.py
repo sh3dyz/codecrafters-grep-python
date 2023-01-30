@@ -13,6 +13,8 @@ def match_pattern(input_line, pattern):
             if i in "1234567890":
                 dd = dd+i
         return dd.isdigit()
+    elif pattern == "\\w":
+        return pattern.isalnum()
     else:
         raise RuntimeError(f"Unhandled pattern: {pattern}")
 
