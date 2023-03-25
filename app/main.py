@@ -1,4 +1,5 @@
 import sys
+import re
 
 # import pyparsing - available if you need it!
 # import lark - available if you need it!
@@ -14,7 +15,7 @@ def match_pattern(input_line, pattern):
                 dd = dd+i
         return dd.isdigit()
     elif pattern == "\\w":
-        return pattern.isalnum()
+        return any(x.isalnum() for x in input_line)
     else:
         raise RuntimeError(f"Unhandled pattern: {pattern}")
 
